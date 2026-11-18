@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry World | Luxury Collection</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .hero {
+            min-height: 480px;
+            background: linear-gradient(90deg, #000, #30250c);
+            display: flex;
+            align-items: center;
+            padding: 60px 8%;
+        }
+
+        .hero h1 {
+            color: #d4af37;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 550px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d4af37;
+            color: #000;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #d4af37;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            text-align: center;
+            line-height: 1.9;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background: #202020;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid #80651c;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #d4af37;
+            margin-bottom: 12px;
+        }
+
+        .product p {
+            line-height: 1.6;
+        }
+
+        .contact {
+            text-align: center;
+            background: #000;
+            line-height: 2;
+        }
+
+        footer {
+            background: #080808;
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">JEWELRY WORLD</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Collections</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Discover Timeless Elegance</h1>
+
+            <p>
+                Welcome to Jewelry World, your destination for beautiful
+                jewelry collections. Discover elegant pieces designed to
+                add beauty, confidence and style to every occasion.
+            </p>
+
+            <a href="#products" class="btn">Explore Collections</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+
+        <div class="about">
+            <p>
+                Jewelry World is a jewelry brand dedicated to elegance,
+                quality and beautiful designs. We offer stylish collections
+                for people who appreciate fashion and timeless beauty.
+                Our goal is to make every special moment memorable with
+                beautiful jewelry.
+            </p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2 class="section-title">Our Collections</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <h3>Necklaces</h3>
+                <p>Elegant necklaces for everyday style and special occasions.</p>
+            </div>
+
+            <div class="product">
+                <h3>Rings</h3>
+                <p>Beautiful rings for memorable moments and personal style.</p>
+            </div>
+
+            <div class="product">
+                <h3>Bracelets</h3>
+                <p>Stylish bracelets that complement every outfit.</p>
+            </div>
+
+            <div class="product">
+                <h3>Earrings</h3>
+                <p>Attractive earrings for a graceful and elegant look.</p>
+            </div>
+
+            <div class="product">
+                <h3>Watches</h3>
+                <p>Classic and modern watches for different occasions.</p>
+            </div>
+
+            <div class="product">
+                <h3>Luxury Accessories</h3>
+                <p>Beautiful accessories to complete your collection.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p>Interested in our collections?</p>
+        <p>Contact Jewelry World to make an enquiry.</p>
+
+        <a class="btn"
+           href="https://wa.me/2349015006142"
+           target="_blank">
+            Contact Us on WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 Jewelry World. All Rights Reserved.</p>
+        <p>Website developed by TechNova.</p>
+    </footer>
+
+</body>
+</html>
